@@ -79,19 +79,20 @@ Cache keys:
 Snap
 ----
 
-Takes an apt package name and optional list of revision ranges. Returns True if
-the package exists and if provided, revision is within ranges.
+Takes a snap name and optional list of revision ranges. Returns True if
+the snap exists and if provided, revision is within ranges.
 
 Usage:
 
 .. code-block:: yaml
 
-    apt: mypackage
+    snap: mypackage
 
 Or with revision ranges as follows:
 
 .. code-block:: yaml
 
+    snap:
       mypackage:
         - min: 0.0
           max: 1.0
